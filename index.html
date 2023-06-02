@@ -11,25 +11,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="bg-dark">
     
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <div class="container">
             <a class="navbar-brand" href="#">
-              <img src="./assests/logo.png"
-              alt="Logo"
-              srcset="./assests/logoMobile.png 1080w, ./assests/logo.png 2400w"
-              sizes="(max-width: 991px) 1080px, 2400px"      
-              />
+              <img class="logo" src="./assests/logo.png" alt="Logo"/>
             </a>
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">
               <span class="toggler-icon top-bar"></span>
               <span class="toggler-icon middle-bar"></span>
               <span class="toggler-icon bottom-bar"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-              <ul class="navbar-nav menu-mobile">
+              <ul class="navbar-nav menu-mobile menu-list" id="menuList">
                 <li class="nav-item">
                   <a class="nav-link text-menu" href="#">Sobre mim</a>
                 </li>
@@ -51,6 +47,20 @@
         </nav>
       </header>
 
+      <section class="container mt-5 ml-5">
+        <div class="row">
+            <div class="col-lg-3">
+                <h2 class="text-section">Analista</h2>
+                <h2 class="text-section">Desenvolvedor</h2>
+                <h2 id="job-title" class="typing-effect text-section"> <span>&emsp;</span></h2>
+                <br/>
+                <button class="btn btn-contato text-btn" onclick="">Contato</button>
+            </div>
+        </div>
+    </section>
+
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/main.js"></script>
 
 </html>

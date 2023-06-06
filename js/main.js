@@ -34,37 +34,3 @@ $(window).on("load", function(){
     changeJobTitle();
  });
 
-
-
-
- function toggleMenu() {
-    var menuList = document.getElementById('menuList');
-    if (menuList.classList.contains('show')) {
-        menuList.classList.remove('show');
-        menuList.classList.add('hide');
-        resetVisibility();
-    } else {
-        menuList.classList.remove('hide');
-        menuList.classList.add('show');
-        animateVisibility();
-    }
-}
-
-function resetVisibility() {
-    var menuItems = document.querySelectorAll('.menu-list li');
-    for (var i = 0; i < menuItems.length; i++) {
-        menuItems[i].style.opacity = 0;
-    }
-}
-
-function animateVisibility() {
-    var menuItems = document.querySelectorAll('.menu-list li');
-    var delay = 200;
-    for (var i = 0; i < menuItems.length; i++) {
-        (function(item, index) {
-            setTimeout(function() {
-                item.style.opacity = 1;
-            }, delay * (index + 1));
-        })(menuItems[i], i);
-    }
-}

@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;600&display=swap');
 
 
-html {
+html,
+body {
   font-family: 'Jura', sans-serif;
-  background-color: #212529;
+  background-color: #000 !important;
   caret-color: #212529 !important;
 }
 
@@ -21,7 +22,7 @@ header {
 }
 
 #background-video {
-  height: 75vh;
+  height: 600px;
   width: 100vw;
   object-fit: cover;
   position: absolute;
@@ -170,9 +171,28 @@ a:hover {
   font-size: 20px;
 }
 
-.persona {
-  width: 210px;
+.mt-20 {
+  padding-top: 1000px;
 }
+
+.div-apresentation {
+  display: flex;
+  margin-top: 100px;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.apresentation {
+
+  width: 350px;
+  background: #271919 !important;
+  border-radius: 120px 60px 50px 190px;
+
+}
+
+
 
 /* Sobre mim */
 
@@ -208,6 +228,11 @@ a:hover {
     padding: 5px 12px 5px 12px;
     font-size: 16px;
   }
+
+  #background-video {
+    height: 350px;
+    width: 100vw;
+  }
 }
 
 /* Estilos para telas pequenas */
@@ -221,6 +246,7 @@ a:hover {
     margin-top: -27.8px;
     right: 0.5%;
     border-radius: 0px 0px 0px 30px;
+    padding-right: 35px;
   }
 
   .button-mobile {
@@ -228,7 +254,7 @@ a:hover {
   }
 
   .logo {
-    width: 250px;
+    width: 200px;
   }
 
   .text-section {
@@ -238,9 +264,27 @@ a:hover {
   .hd {
     margin-bottom: 10px;
   }
+
   .btn-contato {
     padding: 6px 14px 6px 14px;
     font-size: 17px;
+  }
+
+  #background-video {
+    height: 400px;
+    width: 100vw;
+  }
+
+  .navbar {
+    padding-top: 0px !important;
+  }
+
+  .navbar-brand {
+    padding-top: 0px !important;
+  }
+
+  .navbar-expand-lg {
+    padding-top: 0px !important;
   }
 }
 
@@ -253,9 +297,15 @@ a:hover {
   .text-section {
     font-size: 50px;
   }
+
   .btn-contato {
     padding: 8px 18px 8px 18px;
     font-size: 18px;
+  }
+
+  #background-video {
+    height: 500px;
+    width: 100vw;
   }
 }
 

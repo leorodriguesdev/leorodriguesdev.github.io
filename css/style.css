@@ -51,7 +51,7 @@ a:hover {
   height: 3px;
   background-color: #88ffcd;
   display: block;
-  transition: all 0.2s;
+  transition: all 0.4s;
 }
 
 /* Adds Space between the lines */
@@ -176,36 +176,6 @@ a:hover {
       }
       .logo {
         width: 250px;
-      }
-      .menu-list {
-        display: none;
-      }
-      
-      .menu-list.show {
-        display: block;
-        animation: fadeIn 0.5s ease forwards;
-      }
-      
-      .menu-list.hide {
-        animation: fadeOut 0.5s ease forwards;
-      }
-      
-      @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-      }
-      
-      @keyframes fadeOut {
-        0% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
       }
       .text-section {
         font-size: 35px;

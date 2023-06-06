@@ -2,21 +2,44 @@
 
 
 html {
-    font-family: 'Jura', sans-serif;
-    background-color: #212529;
-    caret-color: #212529 !important;
+  font-family: 'Jura', sans-serif;
+  background-color: #212529;
+  caret-color: #212529 !important;
 }
 
 /* Header */
 
 header {
-  background-color: #212529;
+  position: relative;
+  z-index: 2;
+  opacity: 0.9;
+  background-color: #21252957;
 }
-  
+
+.hd {
+  height: 60px;
+}
+
+#background-video {
+  height: 75vh;
+  width: 100vw;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.welcome {
+  opacity: 0.9;
+}
+
 .navbar-brand img {
   margin-right: 10px;
 }
-  
+
 .navbar-nav .nav-link {
   margin-left: 15px;
 }
@@ -30,7 +53,7 @@ header {
   font-family: 'Jura', sans-serif;
   color: #FAFB63;
   font-style: italic;
-  text-align: end;
+  text-align: center;
 }
 
 a:hover {
@@ -46,7 +69,7 @@ a:hover {
 }
 
 /* Lines of the Toggler */
-.toggler-icon{
+.toggler-icon {
   width: 30px;
   height: 3px;
   background-color: #88ffcd;
@@ -55,7 +78,7 @@ a:hover {
 }
 
 /* Adds Space between the lines */
-.middle-bar{
+.middle-bar {
   margin: 5px auto;
 }
 
@@ -74,6 +97,7 @@ a:hover {
   transform: rotate(-45deg);
   transform-origin: 10% 90%;
 }
+
 /* State when navbar is opened (END) */
 
 /* State when navbar is collapsed (START) */
@@ -89,6 +113,7 @@ a:hover {
 .navbar-toggler.collapsed .bottom-bar {
   transform: rotate(0);
 }
+
 /* State when navbar is collapsed (END) */
 
 /* Color of Toggler when collapsed */
@@ -114,17 +139,27 @@ a:hover {
 }
 
 @keyframes typing {
-  from { width: 0 }
+  from {
+    width: 0
+  }
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #212529; }
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: #212529;
+  }
 }
+
 .btn-contato {
   margin: 10px;
-  background: rgb(250,251,99);
-  background: linear-gradient(90deg, rgba(250,251,99,1) 0%, rgba(44,205,196,1) 35%, rgba(107,255,247,1) 100%);
+  background: rgb(250, 251, 99);
+  background: linear-gradient(90deg, rgba(250, 251, 99, 1) 0%, rgba(44, 205, 196, 1) 35%, rgba(107, 255, 247, 1) 100%);
   padding: 10px 25px 10px 25px;
 }
 
@@ -133,6 +168,10 @@ a:hover {
   color: #000000;
   font-style: italic;
   font-size: 20px;
+}
+
+.persona {
+  width: 210px;
 }
 
 /* Sobre mim */
@@ -151,61 +190,79 @@ a:hover {
 
 /* Footer */
 
-    /* Estilos para dispositivos móveis */
-    @media (max-width: 767px) {
-      .navbar-collapse {
-          justify-content: flex-end;
-      }
-      .logo {
-        width: 200px;
-      }
-      .text-section {
-        font-size: 35px;
-      }
-      .btn-contato {
-        padding: 5px 12px 5px 12px;
-        font-size: 16px;
-      }
-    }
-  
-    /* Estilos para telas pequenas */
-    @media (max-width: 991px) {
-      .menu-mobile{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        position: absolute;
-        right: 10%;
-      }
-      .button-mobile {
-        box-shadow: none !important;
-      }
-      .logo {
-        width: 250px;
-      }
-      .text-section {
-        font-size: 35px;
-      }
-    }
-    
-      /* Estilos para telas médias */
-    @media (min-width: 992px) and (max-width: 1199px) {
-      .logo {
-        width: 275px;
-      }
+/* Estilos para dispositivos móveis */
+@media (max-width: 767px) {
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
 
-      .text-section {
-        font-size: 50px;
-      }
-    }
+  .logo {
+    width: 200px;
+  }
+
+  .text-section {
+    font-size: 35px;
+  }
+
+  .btn-contato {
+    padding: 5px 12px 5px 12px;
+    font-size: 16px;
+  }
+}
+
+/* Estilos para telas pequenas */
+@media (max-width: 991px) {
+  .menu-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    background-color: #21252957;
+    margin-top: -27.8px;
+    right: 0.5%;
+    border-radius: 0px 0px 0px 30px;
+  }
+
+  .button-mobile {
+    box-shadow: none !important;
+  }
+
+  .logo {
+    width: 250px;
+  }
+
+  .text-section {
+    font-size: 35px;
+  }
+
+  .hd {
+    margin-bottom: 10px;
+  }
+  .btn-contato {
+    padding: 6px 14px 6px 14px;
+    font-size: 17px;
+  }
+}
+
+/* Estilos para telas médias */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .logo {
+    width: 275px;
+  }
+
+  .text-section {
+    font-size: 50px;
+  }
+  .btn-contato {
+    padding: 8px 18px 8px 18px;
+    font-size: 18px;
+  }
+}
 
 
-      /* Estilos para telas grandes */  
-    @media (min-width: 1200px) {
-      .logo {
-        width: 300px;
-      }
-    }
-  
-
-
+/* Estilos para telas grandes */
+@media (min-width: 1200px) {
+  .logo {
+    width: 300px;
+  }
+}

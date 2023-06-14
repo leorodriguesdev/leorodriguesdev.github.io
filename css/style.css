@@ -13,8 +13,7 @@ body {
 header {
   position: relative;
   z-index: 2;
-  opacity: 0.9;
-  background-color: #21252957;
+  background-color: #2125291d;
 }
 
 .hd {
@@ -55,6 +54,7 @@ header {
   color: #FAFB63;
   font-style: italic;
   text-align: center;
+  text-shadow: #000000 0.5px 0.5px 0.5px;
 }
 
 a:hover {
@@ -178,18 +178,24 @@ a:hover {
 .div-apresentation {
   display: flex;
   margin-top: 150px;
+  padding-top: 100px;
   align-content: center;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.apresentation {
+.img-apresentation {
 
-  width: 350px;
+  width: 450px;
   background: #271919 !important;
   border-radius: 120px 60px 50px 190px;
 }
 
+.text-apresentation {
+  width: 450px;
+}
 
 
 /* Sobre mim */
@@ -240,7 +246,7 @@ a:hover {
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    background-color: #21252957;
+    background-color: #2125291d;
     margin-top: -3.5px;
     right: 0.5%;
     border-radius: 0px 0px 0px 30px;

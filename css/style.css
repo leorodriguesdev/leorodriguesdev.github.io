@@ -177,9 +177,8 @@ a:hover {
 
 .div-apresentation {
   display: flex;
-  margin-top: 100px;
+  margin-top: 150px;
   align-content: center;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -189,7 +188,6 @@ a:hover {
   width: 350px;
   background: #271919 !important;
   border-radius: 120px 60px 50px 190px;
-
 }
 
 

@@ -15,6 +15,9 @@ body {
   font-family: var(--font-jura);
   background-color: var(--full-brack) !important;
   caret-color: var(--black) !important;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 header {

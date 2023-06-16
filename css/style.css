@@ -1,19 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;600&display=swap');
 
+:root {
+  --black: #212529;
+  --black-opacity: #2125291d;
+  --yellow: #FAFB63;
+  --green: #88ffcd;
+  --full-brack: #000000;
+  --full-white: #ffffff;
+  --font-jura: 'Jura', sans-serif;
+}
 
 html,
 body {
-  font-family: 'Jura', sans-serif;
-  background-color: #000 !important;
-  caret-color: #212529 !important;
+  font-family: var(--font-jura);
+  background-color: var(--full-brack) !important;
+  caret-color: var(--black) !important;
 }
-
-/* Header */
 
 header {
   position: relative;
   z-index: 2;
-  background-color: #2125291d;
+  background-color: var(--black-opacity);
 }
 
 .hd {
@@ -44,21 +51,20 @@ header {
   margin-left: 15px;
 }
 
-/* Remove border from toggler */
 .navbar-toggler {
   border: 0 !important;
 }
 
 .text-menu {
-  font-family: 'Jura', sans-serif;
-  color: #FAFB63;
+  font-family: var(--font-jura);
+  color: var(--yellow);
   font-style: italic;
   text-align: center;
-  text-shadow: #000000 0.5px 0.5px 0.5px;
+  text-shadow: var(--full-black) 0.5px 0.5px 0.5px;
 }
 
 a:hover {
-  color: #88ffcd !important;
+  color: var(--green) !important;
 }
 
 .navbar-toggler:focus,
@@ -69,21 +75,18 @@ a:hover {
   border: 0 !important;
 }
 
-/* Lines of the Toggler */
 .toggler-icon {
   width: 30px;
   height: 3px;
-  background-color: #88ffcd;
+  background-color: var(--green);
   display: block;
   transition: all 0.4s;
 }
 
-/* Adds Space between the lines */
 .middle-bar {
   margin: 5px auto;
 }
 
-/* State when navbar is opened (START) */
 .navbar-toggler .top-bar {
   transform: rotate(45deg);
   transform-origin: 10% 10%;
@@ -99,9 +102,6 @@ a:hover {
   transform-origin: 10% 90%;
 }
 
-/* State when navbar is opened (END) */
-
-/* State when navbar is collapsed (START) */
 .navbar-toggler.collapsed .top-bar {
   transform: rotate(0);
 }
@@ -115,18 +115,14 @@ a:hover {
   transform: rotate(0);
 }
 
-/* State when navbar is collapsed (END) */
-
-/* Color of Toggler when collapsed */
 .navbar-toggler.collapsed .toggler-icon {
-  background-color: #FAFB63;
+  background-color: var(--yellow);
 }
 
-/* Section */
 
 .text-section {
-  font-family: 'Jura', sans-serif;
-  color: #FAFB63;
+  font-family: var(--font-jura);
+  color: var(--yellow);
   font-style: italic;
   font-size: 75px;
 }
@@ -153,7 +149,7 @@ a:hover {
   }
 
   50% {
-    border-color: #212529;
+    border-color: var(--caret-color);
   }
 }
 
@@ -165,8 +161,8 @@ a:hover {
 }
 
 .text-btn {
-  font-family: 'Jura', sans-serif;
-  color: #000000;
+  font-family: var(--font-jura);
+  color: var(--full-black);
   font-style: italic;
   font-size: 20px;
 }
@@ -197,22 +193,6 @@ a:hover {
   width: 450px;
 }
 
-
-/* Sobre mim */
-
-/* Experiências */
-
-/* Projetos */
-
-/* Habilidades */
-
-/* Depoimentos */
-
-/* Blog */
-
-/* Área de contato */
-
-/* Footer */
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 767px) {
@@ -246,7 +226,7 @@ a:hover {
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    background-color: #2125291d;
+    background-color: var(--black-opacity);
     margin-top: -3.5px;
     right: 0.5%;
     border-radius: 0px 0px 0px 30px;

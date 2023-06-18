@@ -1,20 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;600&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Poppins:ital,wght@0,500;0,600;1,400;1,500;1,600;1,700&display=swap');
 
+ :root {
+  --black: #212529;
+  --black-opacity: #2125291d;
+  --yellow: #FAFB63;
+  --green: #88ffcd;
+  --blue: #6BFFF7;
+  --purple: #9B99FF;
+  --green-bg: #2CCDC4;
+  --black-bg: #0F0000;
+  --full-brack: #000000;
+  --full-white: #ffffff;
+  --font-jura: 'Jura', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+}
 
 html,
 body {
-  font-family: 'Jura', sans-serif;
-  background-color: #000 !important;
-  caret-color: #212529 !important;
+  font-family: var(--font-jura);
+  background-color: var(--full-brack) !important;
+  caret-color: var(--black) !important;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-/* Header */
+body {
+  overflow-x: hidden;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
 
 header {
   position: relative;
   z-index: 2;
-  opacity: 0.9;
-  background-color: #21252957;
+  background-color: var(--black-opacity);
+}
+
+body::-webkit-scrollbar {
+  width: 12px;     
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--black-bg);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--yellow);
+  border-radius: 20px;
+  border: 3px solid var(--black-bg);
+
 }
 
 .hd {
@@ -22,7 +60,7 @@ header {
 }
 
 #background-video {
-  height: 600px;
+  height: 740px;
   width: 100vw;
   object-fit: cover;
   position: absolute;
@@ -35,6 +73,7 @@ header {
 
 .welcome {
   opacity: 0.9;
+  height: 616px;
 }
 
 .navbar-brand img {
@@ -45,20 +84,20 @@ header {
   margin-left: 15px;
 }
 
-/* Remove border from toggler */
 .navbar-toggler {
   border: 0 !important;
 }
 
 .text-menu {
-  font-family: 'Jura', sans-serif;
-  color: #FAFB63;
+  font-family: var(--font-jura);
+  color: var(--yellow);
   font-style: italic;
   text-align: center;
+  text-shadow: var(--full-black) 0.5px 0.5px 0.5px;
 }
 
 a:hover {
-  color: #88ffcd !important;
+  color: var(--green) !important;
 }
 
 .navbar-toggler:focus,
@@ -69,21 +108,18 @@ a:hover {
   border: 0 !important;
 }
 
-/* Lines of the Toggler */
 .toggler-icon {
   width: 30px;
   height: 3px;
-  background-color: #88ffcd;
+  background-color: var(--green);
   display: block;
   transition: all 0.4s;
 }
 
-/* Adds Space between the lines */
 .middle-bar {
   margin: 5px auto;
 }
 
-/* State when navbar is opened (START) */
 .navbar-toggler .top-bar {
   transform: rotate(45deg);
   transform-origin: 10% 10%;
@@ -99,9 +135,6 @@ a:hover {
   transform-origin: 10% 90%;
 }
 
-/* State when navbar is opened (END) */
-
-/* State when navbar is collapsed (START) */
 .navbar-toggler.collapsed .top-bar {
   transform: rotate(0);
 }
@@ -115,18 +148,14 @@ a:hover {
   transform: rotate(0);
 }
 
-/* State when navbar is collapsed (END) */
-
-/* Color of Toggler when collapsed */
 .navbar-toggler.collapsed .toggler-icon {
-  background-color: #FAFB63;
+  background-color: var(--yellow);
 }
 
-/* Section */
 
 .text-section {
-  font-family: 'Jura', sans-serif;
-  color: #FAFB63;
+  font-family: var(--font-jura);
+  color: var(--yellow);
   font-style: italic;
   font-size: 75px;
 }
@@ -153,7 +182,7 @@ a:hover {
   }
 
   50% {
-    border-color: #212529;
+    border-color: var(--caret-color);
   }
 }
 
@@ -165,48 +194,101 @@ a:hover {
 }
 
 .text-btn {
-  font-family: 'Jura', sans-serif;
-  color: #000000;
+  font-family: var(--font-jura);
+  color: var(--full-black);
   font-style: italic;
   font-size: 20px;
+  margin-top: 70px;
 }
 
 .mt-20 {
   padding-top: 1000px;
 }
+.mx-apresentation {
+  margin-right: 10rem!important;
+  margin-left: -6rem!important;
+}
 
 .div-apresentation {
-  display: flex;
-  margin-top: 150px;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
+  background-color: var(--black-bg);
+  height: 739px;}
+
+.img-apresentation {
+  width: 700px;
 }
 
-.apresentation {
+.text-apresentation {
+  width: 450px;
+}
 
-  width: 350px;
-  background: #271919 !important;
-  border-radius: 120px 60px 50px 190px;
+.img-experience {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.img-busca {
+  width: 250px;
+  margin-left: -27px;
+}
+
+.div-experience {
+  background-color: var(--black-bg);
+  height: 739px;
+}
+
+.title-experience {
+  font-family: var(--font-jura);
+  color: var(--blue);
+  font-style: italic;
+  font-size: 72px;
+  font-weight: bold;
+  align-items: start;
+
+}
+
+.exp {
+margin: 50px 70px;
+
+}
+
+.subtitle-experience {
+  font-family: var(--font-jura);
+  color: var(--yellow);
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.subtitle-busca {
+  font-family: var(--font-jura);
+  color: var(--blue);
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.text-experience {
+  font-family: var(--font-jura);
+  color: var(--full-white);
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 500;
+  width: 200px;
+}
+
+.hr-exp {
+  width: 25%;
+  color: var(--full-white);
+  border-radius: 5px;
 }
 
 
+.div-outher {
+  background-color: #0f00008e;
+  height: 739px;
+}
 
-/* Sobre mim */
-
-/* Experiências */
-
-/* Projetos */
-
-/* Habilidades */
-
-/* Depoimentos */
-
-/* Blog */
-
-/* Área de contato */
-
-/* Footer */
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 767px) {
@@ -240,7 +322,7 @@ a:hover {
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    background-color: #21252957;
+    background-color: var(--black-opacity);
     margin-top: -3.5px;
     right: 0.5%;
     border-radius: 0px 0px 0px 30px;

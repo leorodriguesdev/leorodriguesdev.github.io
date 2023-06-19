@@ -215,6 +215,7 @@ a:hover {
 
 .img-apresentation {
   width: 700px;
+  margin-left: -50px;
 }
 
 .text-apresentation {
@@ -249,6 +250,8 @@ a:hover {
 
 .exp {
 margin: 50px 70px;
+width: 224px;
+
 
 }
 
@@ -285,10 +288,51 @@ margin: 50px 70px;
 
 
 .div-outher {
-  background-color: #0f00008e;
+  background-color: var(--black-opacity);
   height: 739px;
 }
 
+.div-footer {
+  background-color: var(--green-bg);
+  height: 739px;
+}
+
+.title-footer {
+  font-family: var(--font-jura);
+  color: var(--yellow);
+  font-style: italic;
+  font-size: 75px;
+  font-weight: 700;
+}
+
+
+.subtitle-footer {
+  font-family: var(--font-jura);
+  color: var(--yellow);
+  font-style: italic;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.text-footer {
+  font-family: var(--font-jura);
+  color: var(--full-black);
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.hr-footer {
+  margin-left: -50px;
+}
+
+.icons-social {
+  color: var(--full-black);
+}
+
+.div-social {
+  width: 300px;
+}
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 767px) {

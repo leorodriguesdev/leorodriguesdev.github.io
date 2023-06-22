@@ -1,5 +1,6 @@
 var botaoSecreto = document.getElementById('cuidado');
 var sessaoSecreta = document.getElementById('galacticMonster');
+var body = document.getElementById('body');
 
 botaoSecreto.addEventListener('click', function() {
   // Desabilita o botão para evitar cliques adicionais durante o timer
@@ -17,12 +18,14 @@ botaoSecreto.addEventListener('click', function() {
       setTimeout(function () {
         sessaoSecreta.style.display = 'block';
         window.location.href = '#galacticMonster';
+        body.style.cursor = 'url(../assests/rocket.cur), auto';
       }, 2000);
 
       setTimeout(function () {
         sessaoSecreta.style.display = 'none';
-        window.location.href = '/#';
+        window.location.href = '#index';
         botaoSecreto.innerText = '👾 !!! CUIDADO !!! 👾';
+        body.style.cursor = 'auto';
       }, 30000);
         }
 

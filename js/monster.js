@@ -6,6 +6,11 @@
   botaoSecreto.addEventListener('click', function() {
     // Mostra a sessão secreta alterando o estilo para 'display: block;'
     sessaoSecreta.style.display = 'block';
+    setTimeout(function() {
+      // Redireciona para o link após o atraso
+      window.location.href = '#canvas';
+    }, 2000);
+
   });
 
 window.requestAnimFrame = function () {

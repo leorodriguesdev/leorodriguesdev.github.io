@@ -1,14 +1,11 @@
-  // Obtém uma referência ao botão e à sessão secreta
   var botaoSecreto = document.getElementById('cuidado');
-  var sessaoSecreta = document.getElementById('canvas');
+  var sessaoSecreta = document.getElementById('galacticMonster');
 
-  // Adiciona um evento de clique ao botão
   botaoSecreto.addEventListener('click', function() {
-    // Mostra a sessão secreta alterando o estilo para 'display: block;'
-    sessaoSecreta.style.display = 'block';
+
     setTimeout(function() {
-      // Redireciona para o link após o atraso
-      window.location.href = '#canvas';
+      sessaoSecreta.style.display = 'block';
+      window.location.href = '#galacticMonster';
     }, 2000);
 
   });
@@ -27,20 +24,20 @@ window.requestAnimFrame = function () {
   };
   
   function init(elemid) {
-    let canvas = document.getElementById(elemid),
-      c = canvas.getContext("2d"),
-      w = (canvas.width = window.innerWidth),
-      h = (canvas.height = window.innerHeight);
+    let galacticMonster = document.getElementById(elemid),
+      c = galacticMonster.getContext("2d"),
+      w = (galacticMonster.width = window.innerWidth),
+      h = (galacticMonster.height = window.innerHeight);
     c.fillStyle = "rgba(30,30,30,1)";
     c.fillRect(0, 0, w, h);
-    return { c: c, canvas: canvas };
+    return { c: c, galacticMonster: galacticMonster };
   }
   
   window.onload = function () {
-    let c = init("canvas").c,
-      canvas = init("canvas").canvas,
-      w = (canvas.width = window.innerWidth),
-      h = (canvas.height = window.innerHeight),
+    let c = init("galacticMonster").c,
+      galacticMonster = init("galacticMonster").galacticMonster,
+      w = (galacticMonster.width = window.innerWidth),
+      h = (galacticMonster.height = window.innerHeight),
       mouse = { x: false, y: false },
       last_mouse = {};
   
@@ -227,7 +224,7 @@ window.requestAnimFrame = function () {
       last_target.y = target.y;
     }
   
-    canvas.addEventListener(
+    galacticMonster.addEventListener(
       "mousemove",
       function (e) {
         last_mouse.x = mouse.x;
@@ -239,12 +236,12 @@ window.requestAnimFrame = function () {
       false
     );
   
-    canvas.addEventListener("mouseleave", function (e) {
+    galacticMonster.addEventListener("mouseleave", function (e) {
       mouse.x = false;
       mouse.y = false;
     });
   
-    canvas.addEventListener(
+    galacticMonster.addEventListener(
       "mousedown",
       function (e) {
         clicked = true;
@@ -252,7 +249,7 @@ window.requestAnimFrame = function () {
       false
     );
   
-    canvas.addEventListener(
+    galacticMonster.addEventListener(
       "mouseup",
       function (e) {
         clicked = false;
@@ -267,8 +264,8 @@ window.requestAnimFrame = function () {
     }
   
     window.addEventListener("resize", function () {
-      (w = canvas.width = window.innerWidth),
-        (h = canvas.height = window.innerHeight);
+      (w = galacticMonster.width = window.innerWidth),
+        (h = galacticMonster.height = window.innerHeight);
       loop();
     });
   

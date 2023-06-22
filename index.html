@@ -180,7 +180,7 @@
     </div>
   </div>
 
-  <div class="div-footer d-flex flex-column justify-content-end p-3">
+  <footer class="div-footer d-flex flex-column justify-content-end p-3">
     <div class="container">
       <div class="col-lg-3">
         <h2 class="title-footer">Orçamento gratuito.</h2>
@@ -207,16 +207,19 @@
 
           <i class="fa fa-whatsapp" style="font-size:48px;color:black;"></i>
         </div>
-
-
       </div>
     </div>
-  </div>
-
-
+    <div class="warning  d-flex justify-content-center">
+      <a href="#canvas" style="text-decoration: none;">
+        <button id="cuidado" class="btn btn-warning pulse">👾 !!! CUIDADO !!! 👾</button>
+      </a>
+    </div>
+  </footer>
+  <canvas id="canvas" style="display: none;"></canvas>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="./js/main.js"></script>
+<script src="./js/monster.js"></script>
 
 
 </html>

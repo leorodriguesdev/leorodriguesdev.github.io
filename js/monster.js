@@ -18,6 +18,12 @@ botaoSecreto.addEventListener('click', function() {
         sessaoSecreta.style.display = 'block';
         window.location.href = '#galacticMonster';
       }, 2000);
+
+      setTimeout(function () {
+        sessaoSecreta.style.display = 'none';
+        window.location.href = '/#';
+        botaoSecreto.innerText = '👾 !!! CUIDADO !!! 👾';
+      }, 30000);
         }
 
     count--;

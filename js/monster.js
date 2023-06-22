@@ -1,14 +1,13 @@
 var botaoSecreto = document.getElementById('cuidado');
 var sessaoSecreta = document.getElementById('galacticMonster');
-var body = document.getElementById('body');
 
-botaoSecreto.addEventListener('click', function() {
+botaoSecreto.addEventListener('click', function () {
   // Desabilita o botão para evitar cliques adicionais durante o timer
   botaoSecreto.disabled = true;
 
   var count = 3;
 
-  var timer = setInterval(function() {
+  var timer = setInterval(function () {
     botaoSecreto.innerText = count;
 
     if (count === 0) {
@@ -23,11 +22,19 @@ botaoSecreto.addEventListener('click', function() {
 
       setTimeout(function () {
         sessaoSecreta.style.display = 'none';
-        window.location.href = '#index';
         botaoSecreto.innerText = '👾 !!! CUIDADO !!! 👾';
-        body.style.cursor = 'auto';
-      }, 30000);
-        }
+        document.body.style.cursor = 'auto';
+      }, 16000);
+
+      var tempoEspera = 15000;
+      setTimeout(function () {
+        document.body.style.transition = 'opacity 1s';
+        document.body.style.opacity = 0;
+        setTimeout(function () {
+          window.location.href = ''; 
+        }, 1000);
+      }, tempoEspera);
+    }
 
     count--;
   }, 1000);

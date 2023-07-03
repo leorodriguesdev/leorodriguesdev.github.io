@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Poppins:ital,wght@0,500;0,600;1,400;1,500;1,600;1,700&display=swap');
+
+
 :root {
     --yellow: #FAFB63;
     --green: #88ffcd;
@@ -5,9 +8,9 @@
     --purple: #9B99FF;
     --color-accent-light: #FAFB63;
     --color-accent-dark: #88ffcd;
-    --color-secondary: #ccc;
+    --color-secondary: #000000;
 
-    --text-color-default: #2c2c2c;
+    --text-color-default: #000000;
     --text-color-light: #fff;
 
     --font-size-default: 15px;
@@ -20,7 +23,7 @@
     --border-color-default: var(--color-secondary);
     --border-color-accent: var(--color-accent-dark);
 
-    --bg-color-default: #fff;
+    --bg-color-default: #ffffff63;
     --bg-color-dark: #2c2c2c;
     --bg-color-accent--lignt: var(--color-accent-light);
     --bg-color-accent--dark: var(--color-accent-dark);
@@ -36,7 +39,7 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-jura);
     font-size: var(--font-size-default);
     color: var(--text-color-default);
 }
@@ -99,11 +102,8 @@ body a {
 
 /* TIMELINE STYLES: YOU NEED THEM!!! */
 .timeline {
-    --wrapper-width: 900px;
-
-    width: 95%;
+    width: 100%;
     max-width: var(--wrapper-width);
-    margin: auto;
 }
 
 .timeline__stepper {

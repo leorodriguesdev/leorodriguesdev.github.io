@@ -509,25 +509,24 @@
           <i class="fa fa-whatsapp" style="font-size:48px;color:black;"></i>
         </div>
       </div>
-      <div class="col-lg-6 login-box">
-        <p>Contate me</p>
-        <form>
-          <div class="user-box">
-            <input required="" name="" type="text">
-            <label>Nome</label>
-          </div>
-          <div class="user-box">
-            <label>Mensagem</label>
-            <textarea rows="7" cols="40" name="comment" form="usrform" placeholder="Escreva aqui..." class="textarea"></textarea>
-          </div>
-          <a href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Enviar
-          </a>
-        </form>
+      <div class="col-lg-6 d-flex align-items-center justify-content-end">
+        <div class="form-container">
+          <form class="form">
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" required="">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="text" id="email" name="email" required="">
+            </div>
+            <div class="form-group">
+              <label for="textarea">Como posso te ajudar?</label>
+              <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+            </div>
+            <button class="btn btn-contato" type="submit">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
     <div class="warning  d-flex justify-content-center">

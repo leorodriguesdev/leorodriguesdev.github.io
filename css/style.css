@@ -219,7 +219,6 @@ a:hover {
 }
 
 .btn-contato {
-  margin: 10px;
   background: rgb(250, 251, 99);
   background: linear-gradient(90deg, rgba(250, 251, 99, 1) 0%, rgba(44, 205, 196, 1) 35%, rgba(107, 255, 247, 1) 100%);
   padding: 10px 25px 10px 25px;
